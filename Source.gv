@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<Strength &le; 26.5<br/>gini = 0.475<br/>samples = 18<br/>value = [11, 7]<br/>class = Lose>, fillcolor="#f6d1b7"] ;
+1 [label=<gini = 0.0<br/>samples = 9<br/>value = [9, 0]<br/>class = Lose>, fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<Cunning &le; 15.5<br/>gini = 0.346<br/>samples = 9<br/>value = [2, 7]<br/>class = Win>, fillcolor="#72b9ec"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label=<Top Trumps Rating &le; 51.0<br/>gini = 0.219<br/>samples = 8<br/>value = [1, 7]<br/>class = Win>, fillcolor="#55abe9"] ;
+2 -> 3 ;
+4 [label=<Technology &le; 16.5<br/>gini = 0.5<br/>samples = 2<br/>value = [1, 1]<br/>class = Lose>, fillcolor="#ffffff"] ;
+3 -> 4 ;
+5 [label=<gini = 0.0<br/>samples = 1<br/>value = [1, 0]<br/>class = Lose>, fillcolor="#e58139"] ;
+4 -> 5 ;
+6 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 1]<br/>class = Win>, fillcolor="#399de5"] ;
+4 -> 6 ;
+7 [label=<gini = 0.0<br/>samples = 6<br/>value = [0, 6]<br/>class = Win>, fillcolor="#399de5"] ;
+3 -> 7 ;
+8 [label=<gini = 0.0<br/>samples = 1<br/>value = [1, 0]<br/>class = Lose>, fillcolor="#e58139"] ;
+2 -> 8 ;
+}
